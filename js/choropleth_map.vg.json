@@ -8,7 +8,10 @@
   },
   "data": {
     "url": "https://raw.githubusercontent.com/arvinloh/w9-homework/refs/heads/main/js/ne_50m_admin_1_states_provinces.json",
-    "format": { "type": "topojson", "feature": "ne_50m_admin_1_states_provinces" }
+    "format": {
+      "type": "topojson",
+      "feature": "ne_50m_admin_1_states_provinces"
+    }
   },
   "transform": [
     {
@@ -19,12 +22,16 @@
           "format": { "type": "csv" }
         },
         "key": "State",
-        "fields": ["live births"]
+        "fields": ["live births", "mothers", "fetal deaths"]
       }
     },
     {
       "calculate": "datum['live births']",
       "as": "live births"
+    },
+    {
+      "calculate": "datum['live births'] / 313407 * 100",
+      "as": "percentage of live births"
     }
   ],
   "mark": { "type": "geoshape" },
@@ -36,7 +43,23 @@
     },
     "tooltip": [
       { "field": "properties.name", "type": "nominal", "title": "State" },
-      { "field": "live births", "type": "quantitative", "title": "Live Births" }
+      {
+        "field": "live births",
+        "type": "quantitative",
+        "title": "Live Births"
+      },
+      { "field": "mothers", "type": "quantitative", "title": "New Mothers" },
+      {
+        "field": "fetal deaths",
+        "type": "quantitative",
+        "title": "Fetal Deaths"
+      },
+      {
+        "field": "percentage of live births",
+        "type": "quantitative",
+        "title": "Percentage of Live Births",
+        "format": ".2f"
+      }
     ]
   }
 }
