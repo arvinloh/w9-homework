@@ -1,6 +1,46 @@
-﻿Name,New South Wales,Victoria,Queensland,Western Australia,South Australia,Tasmania,Australian Capital Territory,Northern Territory,Australia
-Mothers,97999,80661,62452,34201,19909,6004,6352,3782,311360
-Fetal deaths,644,636,510,196,144,28,41,62,2261
-Live births,98628,81153,62873,34480,20037,6053,6419,3764,313407
-Not stated,37,0,0,0,0,0,0,0,37
-Total,99309,81789,63383,34676,20181,6081,6460,3826,315705
+﻿gn_name,Category,Value
+New South Wales,Mothers,97999
+New South Wales,Fetal deaths,644
+New South Wales,Live births,98628
+New South Wales,Not stated,37
+New South Wales,Total,99309
+Victoria,Mothers,80661
+Victoria,Fetal deaths,636
+Victoria,Live births,81153
+Victoria,Not stated,0
+Victoria,Total,81789
+Queensland,Mothers,62452
+Queensland,Fetal deaths,510
+Queensland,Live births,62873
+Queensland,Not stated,0
+Queensland,Total,63383
+Western Australia,Mothers,34201
+Western Australia,Fetal deaths,196
+Western Australia,Live births,34480
+Western Australia,Not stated,0
+Western Australia,Total,34676
+South Australia,Mothers,19909
+South Australia,Fetal deaths,144
+South Australia,Live births,20037
+South Australia,Not stated,0
+South Australia,Total,20181
+Tasmania,Mothers,6004
+Tasmania,Fetal deaths,28
+Tasmania,Live births,6053
+Tasmania,Not stated,0
+Tasmania,Total,6081
+Australian Capital Territory,Mothers,6352
+Australian Capital Territory,Fetal deaths,41
+Australian Capital Territory,Live births,6419
+Australian Capital Territory,Not stated,0
+Australian Capital Territory,Total,6460
+Northern Territory,Mothers,3782
+Northern Territory,Fetal deaths,62
+Northern Territory,Live births,3764
+Northern Territory,Not stated,0
+Northern Territory,Total,3826
+Australia,Mothers,311360
+Australia,Fetal deaths,2261
+Australia,Live births,313407
+Australia,Not stated,37
+Australia,Total,315705
