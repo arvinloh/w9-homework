@@ -13,7 +13,7 @@
       "lookup": "properties.NAME",
       "from": {
         "data": {
-          "url": "data.csv"
+          "url": "https://raw.githubusercontent.com/arvinloh/w9-homework/refs/heads/main/js/data.csv"
         },
         "key": "State/territory of birth",
         "fields": ["Live births"]
