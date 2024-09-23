@@ -5,12 +5,12 @@
   "title": "Map of Australia showing live births in 2021 by state/territory",
   "projection": { "type": "equalEarth" },
   "data": {
-    "url": "js/ne_1.json",
+    "url": "https://raw.githubusercontent.com/arvinloh/w9-homework/refs/heads/main/js/ne_1.json",
     "format": { "type": "topojson", "feature": "ne_10m_admin_1_states_provinces" }
   },
   "transform": [
     {
-      "lookup": "properties.STATE_NAME",
+      "lookup": "properties.NAME",
       "from": {
         "data": {
           "url": "data.csv"
