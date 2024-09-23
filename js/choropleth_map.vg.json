@@ -39,7 +39,8 @@
     "color": {
       "field": "live births",
       "type": "quantitative",
-      "scale": { "scheme": "blues" }
+      "scale": { "scheme": "blues" },
+      "legend": { "title": "Live Births of Babies" }
     },
     "tooltip": [
       { "field": "properties.name", "type": "nominal", "title": "State" },
