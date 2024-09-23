@@ -1,0 +1,39 @@
+﻿{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Map of Australia showing live births in 2021 by state/territory",
+  "width": 800,
+  "height": 400,
+  "projection": { "type": "equalEarth" },
+  "data": {
+    "url": "https://raw.githubusercontent.com/FIT3179/Vega-Lite/main/3_choropleth_map/js/ne_110m_admin_0_countries.topojson",
+    "format": { "type": "topojson", "feature": "ne_110m_admin_0_countries" }
+  },
+  "transform": [
+    {
+      "lookup": "properties.STATE_NAME",
+      "from": {
+        "data": {
+          "url": "https://raw.githubusercontent.com/FIT3179/W9-homework/data/data.csv"
+        },
+        "key": "State/territory of birth",
+        "fields": ["Live births"]
+      }
+    }
+  ],
+  "mark": { "type": "geoshape", "stroke": "black", "strokeWidth": 1 },
+  "encoding": {
+    "color": {
+      "field": "Live births",
+      "type": "quantitative",
+      "scale": { "type": "log" }
+    },
+    "tooltip": [
+      {
+        "field": "properties.STATE_NAME",
+        "type": "nominal",
+        "title": "State/Territory"
+      },
+      { "field": "Live births", "type": "quantitative" }
+    ]
+  }
+}
